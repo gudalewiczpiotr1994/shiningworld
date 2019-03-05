@@ -1,0 +1,106 @@
+
+/*styles created by Konstantin M  from codepen.io*/
+.lightbox-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y:auto;
+    height: 40vh;
+    background-color: rgba(244,244,244,0.6);
+    border: rgba(0,0,0,0.3) solid 2px;
+    border-radius: 10px;
+}
+
+.lightbox-gallery div > img {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.lightbox-gallery div {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+@media only screen and (max-width: 480px) {
+    .lightbox-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lightbox > div {
+        margin-bottom: 10px;
+    }
+}
+
+/*Lighbox CSS*/
+
+.lightbox {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 5%;
+    margin: auto;
+    z-index: 20;
+    padding-top: 30px;
+    box-sizing: border-box;
+    background-color: black;
+    overflow:auto;
+
+
+}
+
+.lightbox img {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+     position: relative;
+    top:5%;
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+
+.lightbox .caption {
+    position: relative;
+    top: -15px;
+    /*background-color: rgba(0,0,0,0.5);*/
+    margin: 15px auto;
+    width: 40%;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #222;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .lightbox .caption{
+        color: white;
+    }
+
+    .lightbox img {
+        top:5%;
+        width: 40vh;
+        margin: auto;
+    }
+}
+
+@media (max-height: 420px){
+
+    .lightbox .caption{
+        top: -20px;
+        color: white;
+    }
+
+    .lightbox img {
+        width: 60vh;
+        margin: auto;
+    }
+
+}

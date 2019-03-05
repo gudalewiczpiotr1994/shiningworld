@@ -1,0 +1,64 @@
+
+/*styles created by Konstantin M  from codepen.io*/
+.lightbox-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y:auto;
+    height: 50vh;
+    background-color: rgba(244,244,244,0.6);
+}
+
+.lightbox-gallery div > img {
+    display: block;
+    width: 100%;
+}
+
+.lightbox-gallery div {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+@media only screen and (max-width: 480px) {
+    .lightbox-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lightbox > div {
+        margin-bottom: 10px;
+    }
+}
+
+/*Lighbox CSS*/
+
+.lightbox {
+    display: none;
+    width: 60%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    z-index: 20;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.lightbox img {
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+
+.lightbox .caption {
+    margin: 15px auto;
+    width: 50%;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #eee;
+}

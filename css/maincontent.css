@@ -1,0 +1,388 @@
+#main-container{
+    background: url("https://media.giphy.com/media/26BRv8DAKvN8fp9gk/giphy.gif")no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+/*Top Panel*/
+#topnav {
+    padding: 0 !important;
+    position: relative;
+    margin: 0 auto;
+    top: 0px;
+    border-top: 50px solid rgba(0,0,0,.7);
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    width: 100% !important;
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+    z-index: 999999 !important;
+    list-style-type: none;
+}
+
+#topnav:hover{
+    border-top: 50px solid rgba(0,0,0,1);
+}
+
+#topnav p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:white;
+    position: relative;
+    bottom: 35px;
+    margin: 0 auto;
+
+}
+
+#theme{
+    display: none;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0px;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    overflow-y:auto;
+
+}
+.container{
+    color: white;
+    position: relative;
+    top: 10%;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container h2{
+    font-family: 'Cabin', sens-serif;
+    letter-spacing: 2px;
+    padding: 20px;
+}
+.container p{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+span{
+    color: #F4A460;
+}
+
+.container button{
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    border: #F4A460 solid 2px;
+    font-size: 16px;
+    padding: 10px 16px;
+    margin: 0 5px ;
+    border-radius: 5px;
+    transition: all ease-in-out .5s;
+    cursor: auto;
+}
+
+.container button:hover{
+
+    background-color: rgba(0,0,0,0.3);
+
+}
+
+.text{
+    margin: 0 auto;
+    padding: 40px;
+    width: 80%;
+}
+#slider{
+    width: 100%;
+    min-width: 100%;
+    height: 25vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.slides{
+    display: block;
+    width: 10000px;
+    height: 25vh;
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+.slide{
+    float: left;
+    height: 25vh;
+    width: 100vh;
+}
+.imgslide{
+    height: 25vh;
+    width: 100vh;
+}
+
+
+
+
+/*Bottom Panel */
+#botnav {
+    z-index: 9999;
+    border-bottom: 50px solid rgba(0,0,0,.7);
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+    bottom: 0 !important;
+    transition: all ease-in-out .5s;
+
+
+}
+
+#botnav:hover{
+    border-bottom: 50px solid rgba(0,0,0,1);
+}
+#botnav p{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin: 0 auto;
+    bottom: -35px;
+    text-align: center;
+}
+
+
+#contact{
+    overflow-y:auto;
+    text-align: center;
+    display: none;
+    background: url(../img/parallexcontact.jpg) no-repeat bottom center;
+    background-size: cover;
+    position: fixed;
+    top: 0px;
+    left:0;
+    width: 100%;
+    height: 100%;
+    overflow-y:auto;
+
+}
+
+.container-contact{
+    font-family: 'Cabin', sens-serif;
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+    top: 20%;
+    margin: 0 auto;
+    width: 75%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.container-contact p{
+    padding: 10px;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 20px;
+
+    /*padding-top: 20px;*/
+}
+
+.container-contact a{
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    color: #F4A460;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container-contact a:hover{
+    color: #C2824D;
+}
+
+.img
+{
+    padding: 0;
+    position: relative;
+    margin: auto;
+    opacity: 0.6;
+    transition: ease-in-out all .5s;
+    display: block;
+    margin: 10px auto;
+    width: 50px;
+}
+
+.img:hover{
+    opacity: 1;
+}
+
+.fb{
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 20px;
+}
+
+.gplus{
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 20px;
+}
+/*!*Left Panel*!*/
+
+
+#leftnav {
+        z-index: 9999;
+        border-left: 50px solid rgba(0,0,0,0.7);
+        border-top: 50px solid transparent;
+        border-bottom: 50px solid transparent;
+        height: 100%;
+        cursor: pointer;
+        position:absolute;
+        text-align: center;
+        top: 0;
+        left: 0;
+    transition: all ease-in-out .5s;
+
+}
+
+#leftnav:hover {
+    border-left: 50px solid rgba(0,0,0,1);
+
+}
+
+
+#leftnav p{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: absolute;
+    right: -10px;
+    bottom: 50%;
+    transform: rotate(270deg);
+}
+
+#gallery{
+    overflow-y:auto;
+    text-align: center;
+    display: none;
+    background: url(../img/parralexgallery.jpeg) no-repeat bottom center;
+    background-size: cover;
+    position: fixed;
+    top: 0px;
+    left:0;
+    width: 100%;
+    height: 100vh;
+}
+
+.container-gallery{
+    position: relative;
+    top: 15%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+    width: 70%;
+}
+
+/*Right Panel*/
+
+#rightnav {
+    z-index: 9999;
+    border-right: 50px solid rgba(0,0,0,0.7);
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    height: 100%;
+    cursor: pointer;
+    position:absolute;
+    top: 0;
+    right: 0;
+    transition: all ease-in-out .5s;
+}
+
+#rightnav:hover {
+    border-right: 50px solid rgba(0,0,0,1);
+
+}
+
+
+#rightnav p{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: absolute;
+    left: -10px;
+    bottom: 50%;
+    transform: rotate(90deg);
+}
+
+
+#offer{
+    text-align: center;
+    display: none;
+    background: url(../img/parralexoffer.jpeg) no-repeat bottom center;
+    background-size: cover;
+    position: fixed;
+    top: 0px;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    overflow-y:auto;
+
+}
+
+.container-offer{
+    margin: 10px ;
+    position: relative;
+    top:10%;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.6);
+    width: 40vh;
+    border-radius: 20px;
+}
+
+@media(max-width: 768px){
+    .container-offer{
+        width: 60%;
+        margin: 5px auto 60px  auto;
+    }
+
+    .container-offer:last-child{
+        margin-bottom: 40%;
+    }
+}
+
+.container-offer p{
+    padding: 15px;
+    font-family: 'Cabin', sens-serif;
+}
+
+/*footer*/
+footer{
+    z-index: 999999;
+    position: absolute;
+    bottom: 0px;
+    right: 5%;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
